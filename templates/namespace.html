@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Linkylinks{% endblock %}
+{% block content %}
+        <div class="list-group mx-auto">
+        {% for ns in namespaces %}
+            <a href="/links/{{ns}}" class="list-group-item list-group-item-action">{{ns}}</a>
+        {% endfor %}
+        </div>
+
+{% endblock %}

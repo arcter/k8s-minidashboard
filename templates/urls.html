@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Linkylinks{% endblock %}
+{% block content %}
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold">All the links there are</h1>
+        <div class="list-group mx-auto">
+        {% for url in urls %}
+            <a href="{{url}}" class="list-group-item list-group-item-action">{{url}}</a>
+        {% endfor %}
+        </div>
+      </div>
+{% endblock %}
